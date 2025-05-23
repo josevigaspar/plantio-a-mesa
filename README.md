@@ -5,7 +5,7 @@ Bem-vindo ao repositório do projeto “Do Plantio à Mesa”!
 Este site percorre as 10 etapas do ciclo alimentar — da semente à compostagem — ilustrando, com dados reais e animações em CSS puro, como pequenas ações no campo reverberam na cidade.
 
 🔗 Acesse ao vivo em GitHub Pages:  
-https://seu-usuario.github.io/do-plantio-a-mesa/  
+https://josevigaspar.github.io/plantio-a-mesa/
 
 ---
 
@@ -43,7 +43,7 @@ Títulos em Merriweather, corpo em Poppins — reforçando a atmosfera de nature
 ---
 
 # 📄 Estrutura do Projeto  
-.
+
 ├── index.html     # página única com navegação por âncoras  
 ├── styles.css     # layout, temas e animações em CSS  
 ├── README.md      # este documento  
