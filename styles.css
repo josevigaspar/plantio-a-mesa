@@ -1,3 +1,5 @@
+/* Variáveis  */
+
 :root{
   --hue-base:122;
   --hue-sec:35;
@@ -40,10 +42,14 @@ img{
   display:block
 }
 
+/* Foco acessível  */
+
 :focus-visible{
   outline:2px dashed var(--clr-secondary);
   outline-offset:3px
 }
+
+/* Layout genérico */
 
 .section{
   padding:5rem 1rem;
@@ -85,6 +91,8 @@ img{
   cursor:pointer;
 }
 
+/* Cabeçalho (Posicionamento, fundo, e blur) */
+
 .topbar{
   position:fixed;
   inset:0 0 auto;
@@ -95,7 +103,8 @@ img{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:.6rem 1rem;color:#fff
+  padding:.6rem 1rem;
+  color:#fff
 }
 
 .topbar h1 a{
@@ -131,6 +140,8 @@ img{
   display:none
 }
 
+/* Icone de hamburguer */
+
 .burger{
   position:absolute;
   right:.75rem;
@@ -165,6 +176,8 @@ img{
 .burger::after{
   bottom:0
 }
+
+/* Menu Hamburguer, medias */
 
 @media(max-width:860px){
   .burger{
@@ -212,6 +225,8 @@ img{
   }
 }
 
+/* Seção hero */
+
 .hero{
   padding:7rem 1rem 5rem;
   text-align:center;
@@ -221,7 +236,12 @@ img{
 
 .hero-text{
   max-width:750px;
-  margin-inline:auto;color:#fff}
+  margin-inline:auto;
+  color:#fff;
+  z-index: 9999;
+}
+
+/* Subtitulo estilizado */
 
 .tagline{
   font-size:clamp(1.1rem,3vw,1.4rem);
@@ -241,21 +261,14 @@ img{
   margin-bottom:2rem
 }
 
-.wave-down,.wave-up{
-  height:120px;
-  pointer-events:none;
-}
-
-.wave-up{
-  transform:rotate(180deg) translateY(-1px)
-}
-
 .carousel{
   background:var(--clr-bg-dark);
   color:#fff;
   text-align:center;
   padding:5rem 0
 }
+
+/* Scroll snapping */
 
 .snap{
   display:flex;
@@ -291,7 +304,8 @@ img{
   border-radius:var(--radius);
   padding:1rem;
   box-shadow:var(--shadow);
-  position:relative;transition:.3s
+  position:relative;
+  transition:.3s
 }
 
 .snap figure:hover{
@@ -339,6 +353,8 @@ img{
   margin-top:1rem;
   list-style:disc inside
 }
+
+/* Ilustração CSS (Farmer) */
 
 .farmer{
   position:relative;
@@ -418,6 +434,7 @@ img{
   transform-origin:50% 100%;
   animation:leafWave 3s ease-in-out infinite;
 }
+
 @keyframes stemSway{
   0%,100%{transform:translateX(-50%) rotate(-1.5deg);}
   50%    {transform:translateX(-50%) rotate( 1.5deg);}
@@ -443,6 +460,8 @@ img{
     animation:none !important;
   }
 }
+
+/* Ilustração CSS (Cheese) */
 
 .cheese{
   position:relative;
@@ -513,6 +532,8 @@ img{
 @media (prefers-reduced-motion: reduce){
   .cheese::before{ animation:none !important; }
 }
+
+/* Seção jornada, consumo */
 
 #jornada.section,
 #consumo.section{
@@ -637,12 +658,16 @@ summary{
   position:relative
 }
 
+/* Icone de expansão*/
+
 summary::after{
   content:"＋";
   position:absolute;
   right:0;
   transition:.3s
 }
+
+/* Icone de contração */
 
 details[open] summary::after{
   content:"－";
@@ -726,6 +751,8 @@ details[open] summary::after{
   }
 }
 
+/* Botão de ação */
+
 .cta{
   text-align:center;
   margin-top:2rem;
@@ -738,6 +765,8 @@ details[open] summary::after{
   padding:1rem;
   font-size:.9rem
 }
+
+/* Modais */
 
 .modal{
   position:fixed;inset:0;
@@ -896,6 +925,8 @@ details[open] summary::after{
   opacity:.7
 }
 
+/* Ajuste modal */
+
 @media(max-width:480px){
   .modal .box{
     padding:1.4rem
@@ -1024,6 +1055,8 @@ dialog.modal .box{
   line-height:1.35;
 }
 
+/* Seção oportunidades */
+
 #oportunidades-jovens h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -1037,7 +1070,7 @@ dialog.modal .box{
 
 .youth-card {
   background: var(--clr-bg-light);
-  border: 2px solid var(--clr-secondary);
+  border: 2px solid var(--clr-primary);
   border-radius: var(--radius);
   padding: 1.5rem;
   box-shadow: var(--shadow);
@@ -1125,6 +1158,8 @@ dialog.modal .box{
   transform:scale(1.15);
 }
 
+/* Fallback se animation-imeline não for suportado */
+
 @supports not (animation-timeline: auto){.scroll-top{display:none;}}
 
 .card, .tip, .youth-card{
@@ -1146,26 +1181,18 @@ dialog.modal .box{
   pointer-events:none;
 }
 
-.card:hover,   
-.card:focus-visible,
-.tip:hover,    
-.tip:focus-visible,
-.youth-card:hover, 
-.youth-card:focus-visible{
+.card:hover,.card:focus-visible,.tip:hover,.tip:focus-visible,.youth-card:hover,.youth-card:focus-visible{
   transform:translateY(-6px) scale(1.05);
 }
 
-.card:hover::after,   
-.card:focus-visible::after,
-.tip:hover::after,    
-.tip:focus-visible::after,
-.youth-card:hover::after, 
-.youth-card:focus-visible::after{
+.card:hover::after,.card:focus-visible::after,.tip:hover::after,.tip:focus-visible::after,.youth-card:hover::after, .youth-card:focus-visible::after{
   transform:translateX(260%) skewX(-20deg);
 }
 
+/* Remove o pseudo-brilho */
+
 @media (hover:none){
-  .card::after, .tip::after, .youth-card::after{display:none;}
+  .card::after,.tip::after,.youth-card::after{display:none;}
 }
 
 #faq details{
@@ -1194,14 +1221,12 @@ dialog.modal .box{
   pointer-events:none;
 }
 
-#faq details:hover,
-#faq details:focus-visible{
+#faq details:hover,#faq details:focus-visible{
   transform:translateY(-4px) scale(1.03);
   box-shadow:var(--shadow);
 }
 
-#faq details:hover::after,
-#faq details:focus-visible::after{
+#faq details:hover::after,#faq details:focus-visible::after{
   transform:translateX(260%) skewX(-20deg);
 }
 
@@ -1221,8 +1246,10 @@ details.prevent{
 details.prevent::after{
   content:"";
   position:absolute;
-  top:0; left:-120%;
-  width:40%; height:100%;
+  top:0; 
+  left:-120%;
+  width:40%;
+  height:100%;
   background:linear-gradient(60deg, transparent 0%, rgba(255,255,255,.10) 40%, rgba(255,255,255,.20) 50%, rgba(255,255,255,.10) 60%, transparent 100%);
   opacity:.45;
   filter:blur(3px);
@@ -1231,13 +1258,11 @@ details.prevent::after{
   pointer-events:none;
 }
 
-details.prevent:hover,
-details.prevent:focus-visible{
+details.prevent:hover,details.prevent:focus-visible{
   transform:translateY(-4px) scale(1.03);
   box-shadow:var(--shadow);
 }
-details.prevent:hover::after,
-details.prevent:focus-visible::after{
+details.prevent:hover::after,details.prevent:focus-visible::after{
   transform:translateX(260%) skewX(-20deg);
 }
 
@@ -1245,11 +1270,20 @@ details.prevent:focus-visible::after{
   details.prevent::after{display:none;}
 }
 
-html{ font-size:100%; }
+html{ 
+  font-size:100%; 
+}
 
-html:has(#fs-toggle:checked){ font-size:115%; }
+html:has(#fs-toggle:checked){ 
+  font-size:115%; 
+}
 
-.fs-toggle{ position:absolute; width:0; height:0; opacity:0; }
+.fs-toggle{ 
+  position:absolute;
+  width:0; 
+  height:0; 
+  opacity:0; 
+}
 
 .fs-btn{
   position:fixed; 
@@ -1269,8 +1303,7 @@ html:has(#fs-toggle:checked){ font-size:115%; }
   z-index:9999;
 }
 
-.fs-btn:hover,
-.fs-btn:focus-visible{ 
+.fs-btn:hover,.fs-btn:focus-visible{ 
   transform:scale(1.12); 
 }
                       
@@ -1280,14 +1313,6 @@ html:has(#fs-toggle:checked) .fs-btn{
 
 @media (prefers-reduced-motion:reduce){
   .fs-btn{ transition:none; }
-}
-
-#historias .card{
-  border-left:6px solid var(--clr-secondary);
-}
-#historias .card h4::before{
-  content:"📍";
-  margin-right:.4rem;
 }
 
 .skip{
@@ -1309,11 +1334,13 @@ html:has(#fs-toggle:checked) .fs-btn{
   z-index:10000;
 }
 
+/* Ondas no início */
+
 .hero{
   position:relative;
   overflow:hidden;         
   isolation:isolate;          
-  background:none;          
+  background:var(--clr-primary-dark);          
 }
 
 .hero::before{
@@ -1336,7 +1363,7 @@ html:has(#fs-toggle:checked) .fs-btn{
   position:absolute;
   left:0; bottom:-2px;        
   width:200%; height:220px;      
-  animation:waves 12s linear infinite;
+  animation:waves 1s linear infinite;
   filter:blur(2px);
   mix-blend-mode:soft-light;   
   z-index:-1;
@@ -1357,4 +1384,3 @@ html:has(#fs-toggle:checked) .fs-btn{
   .hero::before{animation:none;}
   .hero::after {display:none;}
 }
-

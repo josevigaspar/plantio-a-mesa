@@ -10,14 +10,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<a href="#inicio" class="scroll-top" aria-label="Voltar ao topo" title="Voltar ao topo">↑</a>
-
+<!-- Início do body -->
 <body>
 
- <a href="#inicio" class="skip">Pular para o conteúdo</a>
+<!-- Botões de acessibilidade e de voltar ao topo-->
+
+<a href="#inicio" class="scroll-top" aria-label="Voltar ao topo" title="Voltar ao topo">↑</a>
+
+<a href="#inicio" class="skip">Pular para o conteúdo</a>
 
 <input type="checkbox"id="fs-toggle"class="fs-toggle"aria-label="Ativar texto ampliado">
 <label for="fs-toggle" class="fs-btn" title="Aumentar tamanho da fonte">A<span aria-hidden="true">+</span></label>
+
+<!-- Cabeçalho -->
 
 <header class="topbar">
   <h1><a href="#inicio">Do Plantio à Mesa</a></h1>
@@ -31,11 +36,12 @@
     <label for="menu-toggle"><a href="#jornada">Jornada</a></label>
     <label for="menu-toggle"><a href="#industria">Indústria</a></label>
     <label for="menu-toggle"><a href="#consumo">Consumo</a></label>
-    <label for="menu-toggle"><a href="#historias">Histórias</a></label>
     <label for="menu-toggle"><a href="#faq">FAQ</a></label>
     <label for="menu-toggle"><a href="#quiz">Quiz</a></label>
   </nav>
 </header>
+
+<!-- Conteúdo da página -->
 
 <main>
 
@@ -47,6 +53,8 @@
     <form action="#etapas"><button class="btn" type="submit">Começar a jornada ⟶</button></form>
   </div>
 </section>
+
+<!-- Seçao carrosel: as 10 etapas do ciclo alimentar -->
 
 <section id="etapas" class="carousel">
   <h2>10 Etapas do Ciclo Alimentar</h2>
@@ -173,6 +181,10 @@
   </div>
 </section>
 
+<!-- Seçao dos modais -->
+
+<!-- Etapa 1 -->
+
 <dialog id="modal-c1" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c1-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
   <div class="box">
@@ -198,6 +210,8 @@
   </div>
 </dialog>
 
+<!-- Etapa 2 -->
+
 <dialog id="modal-c2" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c2-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
   <div class="box">
@@ -220,6 +234,8 @@
     <footer>Fonte: EMBRAPA Soja – Circular Técnica 187 (2024)</footer>
   </div>
 </dialog>
+
+<!-- Etapa 3 -->
 
 <dialog id="modal-c3" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c3-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
@@ -244,6 +260,8 @@
   </div>
 </dialog>
 
+<!-- Etapa 4 -->
+
 <dialog id="modal-c4" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c4-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
   <div class="box">
@@ -265,6 +283,8 @@
   </div>
 </dialog>
 
+<!-- Etapa 5 -->
+
 <dialog id="modal-c5" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c5-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
   <div class="box">
@@ -284,6 +304,8 @@
     <footer>Fonte: EMBRAPA Semiárido – AgroInsight (2024)</footer>
   </div>
 </dialog>
+
+<!-- Etapa 6 -->
 
 <dialog id="modal-c6" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c6-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
@@ -306,6 +328,8 @@
   </div>
 </dialog>
 
+<!-- Etapa 7 -->
+
 <dialog id="modal-c7" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c7-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
   <div class="box">
@@ -326,6 +350,8 @@
     <footer>Fonte: EMBRAPA Agricultura Digital – Sibraar (2024)</footer>
   </div>
 </dialog>
+
+<!-- Etapa 8 -->
 
 <dialog id="modal-c8" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c8-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
@@ -348,6 +374,8 @@
   </div>
 </dialog>
 
+<!-- Etapa 9 -->
+
 <dialog id="modal-c9" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c9-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
   <div class="box">
@@ -368,6 +396,8 @@
     <footer>Fontes: EMBRAPA Alimentos &amp; Nutrição (2023); IBGE – POF 2018</footer>
   </div>
 </dialog>
+
+<!-- Etapa 10 -->
 
 <dialog id="modal-c10" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-c10-title">
   <a href="#etapas" class="overlay-close" aria-label="Fechar"></a>
@@ -392,108 +422,7 @@
   </div>
 </dialog>
 
-<section id="historias" class="section light">
-  <h2>Da Minha Terra&nbsp;→&nbsp;Para a Sua Mesa</h2>
-
-  <p class="center" style="max-width:760px;margin:0 auto 2.2rem;">
-    Quatro histórias de Douradina-PR mostram como gestos
-    simples no campo ecoam na cidade. Clique para se inspirar!
-  </p>
-
-  <div class="timeline">
-
-    <div class="card">
-      <a href="#modal-h1" class="click-zone" aria-label="Abrir história de Dona Lurdes"></a>
-      <h4>Dona Lurdes • Horta Escolar</h4>
-      <p>Ex-aluna que doa mudas de alface e ensina compostagem…</p>
-    </div>
-
-    <div class="card">
-      <a href="#modal-h2" class="click-zone" aria-label="Abrir história do Sítio São Carlos"></a>
-      <h4>Sítio São Carlos • Sensores caseiros</h4>
-      <p>Pai e filha que reduziram 28 % de água com Arduino…</p>
-    </div>
-
-    <div class="card">
-      <a href="#modal-h3" class="click-zone" aria-label="Abrir história da Cooperativa Jovem"></a>
-      <h4>Cooperativa Jovem • App de Feiras</h4>
-      <p>Estudantes ligam 22 produtores a famílias da cidade…</p>
-    </div>
-
-    <div class="card">
-      <a href="#modal-h4" class="click-zone" aria-label="Abrir história da Padaria da Vila"></a>
-      <h4>Padaria da Vila • Pão Solar de Mandioca</h4>
-      <p>Cida assa pães com forno híbrido e raiz local…</p>
-    </div>
-
-  </div>
-</section>
-
-<dialog id="modal-h1" class="modal" role="dialog" aria-modal="true" aria-labelledby="h1-title">
-  <a href="#historias" class="overlay-close" aria-label="Fechar"></a>
-  <div class="box">
-    <a href="#historias" class="close">✕ Fechar</a>
-    <header><h3 id="h1-title">Dona Lurdes • Horta Escolar</h3></header>
-
-    <p>Aos 63 anos, a ex-aluna da Escola Estadual Cleoracy cultiva
-       <strong>12 canteiros orgânicos</strong> no quintal e doa mudas toda segunda-feira.
-       Em 2024 a merenda ganhou <strong>35 % mais verduras frescas</strong> e
-       86 estudantes aprenderam a compostar cascas num minhocário feito
-       de pneus velhos.</p>
-
-    <p class="highlight">Lição de Dona Lurdes: “Colha bem cedinho — o sol forte
-       faz a alface murchar antes de chegar na escola”.</p>
-  </div>
-</dialog>
-
-<dialog id="modal-h2" class="modal" role="dialog" aria-modal="true" aria-labelledby="h2-title">
-  <a href="#historias" class="overlay-close" aria-label="Fechar"></a>
-  <div class="box">
-    <a href="#historias" class="close">✕ Fechar</a>
-    <header><h3 id="h2-title">Sítio São Carlos • Sensores de Umidade</h3></header>
-
-    <p>Carlos e a filha Marina montaram sensores de solo com Arduino
-       + Wi-Fi rural — custo total: R$ 280. O pivô só liga quando o
-       sensor acusa <strong>&lt;18 % de umidade</strong>; em nove meses o consumo
-       de água caiu <strong>-28 %</strong> e a conta de luz R$ 410.</p>
-
-    <p class="highlight">Aprendizado: regar na medida evita fungos e poupa
-       agrotóxicos — economia dupla.</p>
-  </div>
-</dialog>
-
-<dialog id="modal-h3" class="modal" role="dialog" aria-modal="true" aria-labelledby="h3-title">
-  <a href="#historias" class="overlay-close" aria-label="Fechar"></a>
-  <div class="box">
-    <a href="#historias" class="close">✕ Fechar</a>
-    <header><h3 id="h3-title">Cooperativa Jovem • App de Feiras</h3></header>
-
-    <p>Três colegas do 1.º ano do Colégio Douradina criaram, em
-       plataforma <em>no-code</em>, um app que conecta <strong>22 produtores</strong> a
-       consumidores da cidade. Cada pedido gera rota otimizada e pagamento
-       via Pix. A renda dos agricultores subiu <strong>R$ 0,41 por real</strong>
-       vendido, e 250 famílias passaram a comprar direto da fonte.</p>
-
-    <p class="highlight">Moral: tecnologia simples + problema real = impacto
-       gigante.</p>
-  </div>
-</dialog>
-
-<dialog id="modal-h4" class="modal" role="dialog" aria-modal="true" aria-labelledby="h4-title">
-  <a href="#historias" class="overlay-close" aria-label="Fechar"></a>
-  <div class="box">
-    <a href="#historias" class="close">✕ Fechar</a>
-    <header><h3 id="h4-title">Padaria da Vila • Pão de Mandioca Solar</h3></header>
-
-    <p>A jovem boleira Cida instalou um forno híbrido gás/solar na Rua
-       Pará com ajuda do Senai-Umuarama. O pão de mandioca usa raiz
-       comprada a 4 km dali, rende <strong>+18 % de margem</strong> e evita
-       40 kg de CO₂ por mês.</p>
-
-    <p class="highlight">Mensagem dela: “Se o sol nasce pra todos,
-       que asse o pão de todos também!”</p>
-  </div>
-</dialog>
+<!-- Seção plantio -->
 
 <section id="plantio" class="section light">
   <h2 class="semeando-timeline">Semeando o Futuro</h2>
@@ -548,6 +477,8 @@
   </div>
 </section>
 
+<!-- Seção jornada -->
+
 <section id="jornada" class="section dark">
   <h2>Da Terra ao Mercado</h2>
   <div class="timeline">
@@ -573,6 +504,8 @@
     </div>
   </div>
 </section>
+
+<!-- Seção industria -->
 
 <section id="industria" class="section light">
   <h2>Transformando Sabores</h2>
@@ -612,16 +545,16 @@
 
       <p class="refs">
         Fontes:&nbsp;
-        <a href="https://www.gov.br/agricultura/pt-br/assuntos/inspecao/produtos-animal/selo-arte" target="_blank" rel="noopener">
+        <a href="https://www.gov.br/agricultura/pt-br/assuntos/producao-animal/selo-arte-selo-queijo-artesanal" target="_blank" rel="noopener">
           MAPA – Selo Arte</a>,&nbsp;
-        <a href="https://www.embrapa.br/gado-de-leite" target="_blank" rel="noopener">
-          Embrapa Gado de Leite (2024)</a>,&nbsp;
-        <a href="https://biblioteca.fgv.br/digital/handle/10438/33863" target="_blank" rel="noopener">
+        <a href="https://agro.fgv.br/dados" target="_blank" rel="noopener">
           FGV AgroTech Report</a>
       </p>
     </article>
   </div>
 </section>
+
+<!-- Seção consumo -->
 
 <section id="consumo" class="section dark">
   <h2>Da Mesa para o Mundo</h2>
@@ -660,6 +593,8 @@
   </div>
 </section>
 
+<!-- Seção oportunidades -->
+
 <section id="oportunidades-jovens" class="section light">
   <h2>Oportunidades para Jovens</h2>
   <div class="youth-cards">
@@ -677,6 +612,8 @@
     </div>
   </div>
 </section>
+
+<!-- Perguntas frequentes -->
 
 <section id="faq" class="section light">
   <h2>Perguntas Frequentes</h2>
@@ -714,6 +651,8 @@
   </details>
 </section>
 
+<!-- Quiz interativo -->
+
 <section id="quiz" class="section dark">
   <h2>Quiz Rápido</h2>
   <p class="center">Toque na pergunta para ver a resposta!</p>
@@ -741,13 +680,19 @@
   </div>
 </section>
 
+<!-- Seção para compartilhar sua história-->
+
 <section id="acao" class="section light">
   <h2>Participe!</h2>
   <p class="center">Publique uma foto da sua refeição local com <strong>#DoPlantioÀMesa</strong> ou envie a história da sua horta escolar.</p>
   <div class="cta"><a target="_blank" href="mailto:gaspar.souza@escola.pr.gov.br" class="btn">Compartilhar história</a></div>
 </section>
 
+<!-- Fim da página-->
+
 </main>
+
+<!-- Rodapé -->
 
 <footer class="footer">© 2025 • José Vinícius – Todos os textos e arte CSS são autorais.</footer>
 
