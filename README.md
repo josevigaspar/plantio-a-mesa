@@ -45,9 +45,6 @@ Ao navegar, o usuário encontra seções com informações, gráficos visuais (c
 plantio-a-mesa/
 ├ index.html      # Estrutura de conteúdo
 ├ style.css       # Estilos globais e componentes
-├ assets/
-│ ├ images/       # Imagens otimizadas
-│ └ fonts/        # Fontes personalizadas
 ├ README.md       # Documentação
 └ LICENSE         # Licença MIT
 ```
