@@ -1,84 +1,107 @@
-# Do Plantio à Mesa 🌱🍽️  
-*Festejando a Conexão Campo-Cidade*
+# Do Plantio à Mesa 🌱🍽️
 
-Bem-vindo ao repositório do projeto “Do Plantio à Mesa”!  
-Este site percorre as 10 etapas do ciclo alimentar — da semente à compostagem — ilustrando, com dados reais e animações em CSS puro, como pequenas ações no campo reverberam na cidade.
+*Festejando a Conexão Campo‑Cidade*
 
-🔗 Acesse ao vivo em GitHub Pages:  
-https://josevigaspar.github.io/plantio-a-mesa/
+**Do Plantio à Mesa** é uma landing page desenvolvida exclusivamente em **HTML5** e **CSS3**, projetada para conscientizar sobre a agricultura sustentável e fortalecer a relação entre produtores rurais e consumidores urbanos. Desenvolvido por **José Vinícius** (2.º ano, Colégio Cleoracy A. Gil, Douradina‑PR) para a Subcategoria 4 do concurso Agrinho 2025.
 
----
-
-# 📦 Sobre o Projeto  
-“Do Plantio à Mesa” combina informações da EMBRAPA, CONAB e IBGE com histórias de pessoas de Douradina-PR. Toda a interatividade (carrossel, modais, quiz) foi implementada sem JavaScript, usando apenas HTML5 e CSS3.
+🔗 Acesse: [https://josevigaspar.github.io/plantio-a-mesa/](https://josevigaspar.github.io/plantio-a-mesa/)
 
 ---
 
-# 🌟 Objetivos  
-- **Valorizar** a produção rural e destacar a agricultura familiar.  
-- **Esclarecer** cada etapa: plantio, colheita, logística, indústria, consumo e compostagem.  
-- **Estimular** ações imediatas: compostagem caseira, compra direta ao produtor e uso da hashtag **#DoPlantioÀMesa**.
+## 📚 Sobre o Projeto
+
+**Do Plantio à Mesa** apresenta conteúdo educativo sobre práticas agrícolas e sustentabilidade, aliado a um design clean e moderno. Sem o uso de JavaScript, o projeto explora:
+
+* **HTML Semântico** para estruturar o conteúdo de forma acessível.
+* **CSS Avançado** para criar layouts responsivos, animações leves e interações por hover.
+
+Ao navegar, o usuário encontra seções com informações, gráficos visuais (construídos em CSS) e elementos interativos que incentivam a exploração do tema.
 
 ---
 
-# 🚀 Tecnologias Utilizadas  
-Camada      | Recurso                                                     | Benefício  
------------ | ----------------------------------------------------------- | ------------------------------  
-HTML5       | Semântico (<header>, <section>, <dialog>, <details>)       | Acessibilidade e interatividade  
-CSS3        | Custom Properties, Flexbox, Grid, clamp(), animações        | Design fluido e responsivo  
-Google Fonts| Merriweather (títulos) & Poppins (corpo)                    | Legibilidade e identidade visual  
+## 🎯 Objetivos
+
+1. **Educar** sobre técnicas de cultivo sustentável, como rotação de culturas e compostagem.
+2. **Sensibilizar** para a importância do consumo de alimentos locais e da preservação ambiental.
+3. **Inspirar** ações práticas de sustentabilidade em ambientes urbanos e rurais.
+4. **Engajar** o visitante por meio de uma experiência visual atraente, mesmo sem JavaScript.
 
 ---
 
-# 🎨 Design & Paleta  
-Variável         | Valor             | Uso  
----------------  | ----------------- | --------------------------  
---clr-primary    | hsl(122,70%,30%)  | Botões e links  
---clr-secondary  | hsl(35,90%,50%)   | Chamadas à ação  
---clr-bg-light   | #faf8f5           | Fundo de seções claras  
---clr-bg-dark    | #0e2311           | Fundo de seções escuras  
+## 🛠️ Tecnologias
 
-Títulos em Merriweather, corpo em Poppins — reforçando a atmosfera de natureza e acolhimento.
-
----
-
-# 📄 Estrutura do Projeto  
-
-├── index.html     # página única com navegação por âncoras  
-├── styles.css     # layout, temas e animações em CSS  
-├── README.md      # este documento  
-└── assets/        # ícones, favicon, edital.pdf e capturas  
+| Ferramenta       | Uso                                          |
+| ---------------- | -------------------------------------------- |
+| **HTML5**        | Marcação semântica, SEO e acessibilidade     |
+| **CSS3**         | Layout (Flexbox, Grid), variáveis, animações |
+| **SVG Inline**   | Ícones e gráficos escaláveis                 |
+| **GitHub Pages** | Hospedagem gratuita                          |
 
 ---
 
-# 📐 Responsividade & Acessibilidade  
-- Layout adaptável de 320 px a 4 K com Flexbox e Grid  
-- Animações desativadas para preferências “reduced-motion”  
-- Skip-link, foco visível em todos os controles e botão A+ para ampliar fonte em 15%  
-- Contraste de cores conforme WCAG 2.1 (nível AA)  
+## 🧱 Estrutura do Projeto
+
+```plaintext
+plantio-a-mesa/
+├ index.html      # Estrutura de conteúdo
+├ style.css       # Estilos globais e componentes
+├ assets/
+│ ├ images/       # Imagens otimizadas
+│ └ fonts/        # Fontes personalizadas
+├ README.md       # Documentação
+└ LICENSE         # Licença MIT
+```
 
 ---
 
-# 💡 Uso  
-Basta acessar o link do GitHub Pages ou abrir `index.html` em qualquer navegador moderno. Não há dependências externas.
+## 🚀 Como Usar
+
+1. **Clone**:
+
+   ```bash
+   git clone https://github.com/josevigaspar/plantio-a-mesa.git
+   ```
+2. **Abra** `index.html` em um navegador moderno.
+
+> Opcional: use o Live Server no VSCode para ver alterações em tempo real.
 
 ---
 
-# 🛠️ Contribuindo  
-Melhorias em conteúdo, acessibilidade ou design são bem-vindas.  
-Faça fork, crie uma branch com suas alterações e abra um pull request.
+## 📱 Responsividade
+
+Desenvolvido com abordagem **mobile-first** e breakpoints:
+
+* **≤600px**: layout vertical e menu colapsado.
+* **601–900px**: duas colunas em destaque.
+* **>900px**: grid de até três colunas.
 
 ---
 
-# 📧 Contato  
-Para perguntas, sugestões ou feedback, entre em contato conosco através do e-mail: gaspar.souza@escola.pr.gov.br  
+## ♿ Acessibilidade
+
+* **Semântico**: tags adequadas para leitores de tela.
+* **Alt Text**: todas as imagens possuem `alt`.
+* **Contraste**: atende WCAG AA.
+* **Teclado**: foco visível em links e botões.
 
 ---
 
-# 📄 Licença  
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+## 🎨 Paleta & Tipografia
+
+* **Cores**:
+
+  * Primária: `hsl(122, 70%, 30%)`
+  * Secundária: `hsl(35, 90%, 50%)`
+  * Fundo claro: `#faf8f5`
+  * Fundo escuro: `#0e2311`
+
+* **Fontes**:
+
+  * Títulos: **Merriweather**
+  * Texto: **Poppins**
 
 ---
 
-Obrigado por visitar “Do Plantio à Mesa”.  
-Esperamos inspirar novas raízes, novas parcerias e refeições cada vez mais conscientes!```
+## Agradecimentos
+
+Agradeço ao **Colégio Cleoracy A. Gil** e ao professor **Fernando** pelo apoio e inspiração durante o desenvolvimento, e à comunidade de **Douradina‑PR** pela motivação e feedback.
