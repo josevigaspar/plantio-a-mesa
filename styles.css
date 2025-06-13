@@ -700,7 +700,7 @@ details[open] summary::after{
   transition:.25s;
   border:3px solid transparent;
   max-width:900px;
-  min-width:650px;
+  min-width:40vw;
   margin-inline:auto;
   text-align:left;
   min-height:70px;
